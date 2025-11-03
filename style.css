@@ -186,6 +186,10 @@ header {
 }
 .image-section .icons a {
     color: var(--white-color);
+    transition: all .4s ease-in-out;
+}
+.image-section .icons a:hover {
+    color: var(--orange-color);
 }
 #hero__img {
     position: absolute;
