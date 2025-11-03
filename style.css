@@ -166,7 +166,7 @@ header {
     border-radius: 50%;
     position: relative;
     z-index: 2;
-    animation: smothscaleimg 4s alternate ease;
+    animation: smothscaleimg 2s alternate ease;
 }
 @keyframes smothscaleimg {
     from {
@@ -177,6 +177,15 @@ header {
         transform: translateX(0);
         opacity: 1;
     }
+}
+.image-section .icons {
+    position: absolute;
+    bottom: -60px;
+    left: 60px;
+    font-size: 2rem;
+}
+.image-section .icons a {
+    color: var(--white-color);
 }
 #hero__img {
     position: absolute;
