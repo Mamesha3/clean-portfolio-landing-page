@@ -240,6 +240,8 @@ header {
     background-color: var(--orange-color);
     color: var(--white-color);
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
     animation: smothscalebtn 5s alternate ease;
     transition: background-color .4s ease-in-out, transform .4s ease-in-out;
 }
