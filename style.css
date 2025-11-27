@@ -272,6 +272,7 @@ header {
     cursor: pointer;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
     background-color: var(--white-color);
+    position: relative;
 }
 .box:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.638);
@@ -281,11 +282,17 @@ header {
     height: 60%;
     object-fit: cover;
     object-position: center;
-    transition: transform .4s ease;
+    transition: all .4s ease;
     border-radius: 1rem;
 }
 .box img:hover {
-    transform: scale(1.05);
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(0.9);
 }
 .box .apps_title {
     color: var(--orange-color);
