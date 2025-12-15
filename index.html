@@ -7,7 +7,7 @@
      <!-- icons link here -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- style link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -66,7 +66,7 @@
                 HTML <span class="bold">|</span> CSS | <span class="bold">Javascript</span> | Git <span class="bold">|</span> Github.
             </span>
         </h3>
-        <a href="Ali_Mohammed_CV.pdf" class="cv" download>
+        <a href="items/Ali_Mohammed_CV.pdf" class="cv" download>
             <i class="fa-solid fa-download"> </i>
             Download CV
         </a>
@@ -121,10 +121,15 @@
          <form action="https://formspree.io/f/xzzklkez" method="POST" class="inputs">
             <input type="text"  id="name" placeholder="Mame.." name="text" required>
             <input type="email"  id="email" name="email" placeholder="example@gmail.com" required>
-            <textarea  id="message" name="message" placeholder="leave Message Here..."></textarea>
+            <textarea  id="message" name="message" placeholder="leave Message Here..." required></textarea>
+            <input type="hidden" name="redirect" value="https://site.io/index.html">
             <button id="send__btn" type="submit">Send</button>
          </form>
     </section>
+
+    <div class="code_here">
+       <h3 id="code"><span class="code_sign">⬅️</span><a href="code">See Code here</a></h3>
+    </div>
 
     <!-- footer one here -->
      <footer>
@@ -132,6 +137,6 @@
      </footer>
 
      <!-- js link -->
-      <script src="script.js"></script>
+      <script src="script/script.js"></script>
 </body>
 </html>

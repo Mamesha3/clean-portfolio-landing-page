@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 240, 240);
+    overflow-x: hidden;
+}
+:root {
+    --white-color: white;
+    --black-color: black;
+    --orange-color: orange;
+    --orangered-color: orangered;
+    --about-bg-color: rgba(255, 68, 0, 0.208);
+    --contact-bg-color: #ff880073;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    box-shadow: 0 0 1rem ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--black-color);
+}
+.logo {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    animation: smothlogo 4s ease;
+}
+.logo h2, h1 {
+    color: var(--white-color);
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.3rem;
+    font-size: 1.3rem;
+    flex-direction: row;
+}
+.bold{
+    color: var(--orangered-color);
+    font-weight: 600;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: var(--orange-color);
+    font-weight: 650;
+    transition: color 0.4s ease-in-out;
+    text-transform: uppercase;
+}
+.nav-bar ul li a:hover {
+    color: var(--white-color);
+    transform: scale(1.3);
+}
+.hum__bar {
+    font-size: 1.7rem;
+    cursor: pointer;
+    display: none;
+    color: var(--white-color);
+    animation: smothhum 4s ease;
+}
+.projects_detail {
+    margin-block: 1,3rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+
+footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 604px) {
+    .nav-bar {
+        display: none;
+    }
+    .hum__bar {
+        display: block;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image View Window</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            border: none;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            background-color: orange;
+            padding: 4px 10px;
+            border-radius: 3px;
+            position: absolute;
+            z-index: 10;
+            font-weight: 630;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">⬅️Back</a>
+    <img src="" alt="">
+
+    <script>
+        let imge = localStorage.getItem('imageView');
+
+        if (imge) {
+            document.querySelector('img').src = imge;
+        }
+    </script>
+</body>
+</html>

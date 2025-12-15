@@ -180,9 +180,13 @@ header {
 }
 .image-section .icons {
     position: absolute;
-    bottom: -60px;
-    left: 60px;
+    bottom: -50px;
+    left: 57px;
     font-size: 2rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-section .icons a {
     color: var(--white-color);
@@ -233,6 +237,7 @@ header {
 .cv { 
     font-size: 1.1rem;
     padding: 0.4rem 2rem;
+    width: 200px;
     margin-top: 1.4rem;
     border-radius: 0.5rem;
     border: none;
@@ -282,17 +287,7 @@ header {
     height: 60%;
     object-fit: cover;
     object-position: center;
-    transition: all .4s ease;
     border-radius: 1rem;
-}
-.box img:hover {
-    height: 350px;
-    width: 100%;
-    position: absolute;
-    z-index: 3;
-    object-fit: cover;
-    object-position: center;
-    transform: scale(0.9);
 }
 .box .apps_title {
     color: var(--orange-color);
@@ -398,7 +393,33 @@ footer {
     animation: smothscaleimg 4s ease;
 }
 
+.code_here {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    transform: translateX(150px);
+}
+.showhere {
+    transform: translateX(0);
+}
+.code_here a {
+    color: black;
+    background-color: orange;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+}
+.code_sign {
+    cursor: pointer;
+}
+
 /* for mobile size screen */
+@media screen and (max-width: 350px) {
+    footer {
+        font-size: 12px;
+    }
+}
 @media screen and (max-width: 500px) {
     .nav-bar ul {
         display: none;
@@ -427,9 +448,10 @@ footer {
         width: 300px;
     }
     .image-section {
-        left: 50%;
-        transform: translateX(-50%);
+        /* left: 50%; */
+        /* transform: translateX(-50%); */
         margin-top: 2rem;
+
     }
     .for__my-project {
         width: 150px;
